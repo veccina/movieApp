@@ -1,0 +1,173 @@
+body {
+    background-color: #f4f4f9; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.navbar {
+    padding: 1rem 1rem; 
+    background-color: #343a40; 
+    transition: background-color 0.3s ease-in-out; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem; 
+    font-family: 'Arial', sans-serif; 
+    transition: color 0.3s; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0; 
+}
+
+.navbar-brand img {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 50px;
+    border-radius: 50%; 
+    border: none; 
+    transition: transform 0.3s ease-in-out;
+    margin-right: auto;
+    margin-left: 180%; 
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #222;
+    margin: 10px;
+    color: #fff; 
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.card-img-top {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.container {
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-4 {
+    width: 25%;  
+}
+
+.carousel {
+    width: 60%; 
+    max-height: 600px; 
+    margin: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    overflow: hidden; 
+    transition: transform 0.6s ease;
+}
+
+.carousel-item {
+    height: 600px; 
+    position: relative; 
+}
+
+.carousel-item img {
+    height: 100%; 
+    object-fit: contain; 
+    object-position: center; 
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    text-align: center;
+    border-radius: 0; 
+    visibility: hidden; 
+}
+
+.carousel-item:hover .carousel-caption {
+    visibility: visible;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; 
+    color: #fff; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M4.5 0L3 1.5 5.5 4 3 6.5 4.5 8 8 4.5 4.5 0z"/></svg>'); 
+    filter: drop-shadow(2px 2px 2px #000); 
+}
+
+.carousel-control-prev-icon {
+    transform: scaleX(-1); 
+}
+
+#load-more {
+    display: block; 
+    width: 200px;
+    margin: 20px auto;  
+    padding: 10px 0;  
+    background-color: #007bff;  
+    color: white;
+    text-align: center; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#load-more:hover {
+    background-color: #0056b3; 
+}
+
+.custom-margin-left {
+    margin-left: 90px; 
+}
+.glow-effect {
+    box-shadow: 0 0 5px #fff;
+}
+.navbar-collapse {
+    margin-right: 18%;
+}
+#movie-list .card {
+    position: relative; /* Sets the positioning context for the absolute elements inside */
+    overflow: hidden; /* Keeps everything within the bounds of the card */
+}
+
+#movie-list .card-body {
+    padding-bottom: 60px; /* Gives extra space at the bottom for the button */
+}
+
+#movie-list .card .btn {
+    position: absolute; /* Positions the button absolutely within the card */
+    bottom: 10px; /* Distance from the bottom of the card */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Precisely center the button */
+    width: 90%; /* Makes the button almost as wide as the card with some padding */
+}
